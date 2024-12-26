@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1a020b00; 
+    color: white;
+    position: fixed; /* Убедитесь, что заголовок фиксирован */
+    top: 0; /* Закрепите заголовок в верхней части экрана */
+    width: 100%; /* Установите ширину заголовка на 100% */
+    z-index: 1000; /* Установите высокий z-index, чтобы заголовок был поверх других элементов */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd700; 
+}
+
+body {
+    height: 200px;
+    background-image: url('/jpg/snapedit_1734958223707.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    overflow-x: hidden; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+#countdown {
+    text-align: center;
+    font-size: 250%;
+}
+
+@keyframes snow {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
+
+.snowflake {
+    position: absolute;
+    top: -0px;
+    z-index: 1000;
+    color: white;
+    font-size: 45px;
+    user-select: none;
+    pointer-events: none;
+    animation: snow linear infinite;
+}
+
+.snowflake:nth-child(odd) {
+    animation-duration: 20s;
+}
+
+.snowflake:nth-child(even) {
+    animation-duration: 30s;
+}
+
+#skills {
+    text-align: center;
+    margin-top: 600px; 
+    padding: -200px;
+    background-color: rgba(111, 109, 109, 0);
+    color: black;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+#video-section {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+
+#video-section h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+#video-section video {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#new-year-message {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace; /* Изменен стиль текста */
+}
+
+#new-year-message h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#new-year-message p {
+    font-size: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+}
+
+.card {
+    background-color: rgba(63, 2, 2, 0.723);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.box-skills{
+    background-image:url(https://img.freepik.com/free-vector/seamless-vector-red-abstract-snow-frame-christmas-season-horizontally-repeatable_8130-2157.jpg?t=st=1734805482~exp=1734809082~hmac=13effd9e140398f728494bc233bc8cf322352ead7593efeb6aca1c39ccb05b5e&w=1800) ;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100%; 
+    width: 100%; 
+    z-index: -1;
+}
+
+.team {
+    margin-left: 400px;
+    margin-top: 200px;
+}
+
+footer {
+    background-image: url(https://img.freepik.com/free-photo/ornament-bows-red-white-board_23-2147963827.jpg?t=st=1735042136~exp=1735045736~hmac=f18ceb0d47677edb7fa5140e26fab819f89f5c2449497f246e40341d0f8cffba&w=2000); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 70px;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    margin-top: 110px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffd700;
+}
+
+.payment-icons img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer-section h2, .footer-section p, .social-media a {
+    color: black; 
+    text-decoration: none;
+}
+
+.top-btn{
+    position: fixed;
+    z-index: 100;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgb(255, 234, 0);
+    color: rgb(200, 0, 0);
+    border: rgb(0, 0, 0) 2px solid;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo {
+        font-size: 15px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1a020b00;
+        padding: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    header nav.active a {
+        font-size: 18px;
+    }
+
+    .top-btn {
+        opacity: 1;
+    }
+}
